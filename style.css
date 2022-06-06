@@ -34,12 +34,10 @@ header img {
   align-items: center;
   width: 50px;
   height: 50px;
+  transition: all 0.7s;
 }
 header img:hover {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%) scale(25);
+  transform: scale(2);
 }
 
 header h1 {
@@ -51,7 +49,7 @@ header h1 {
 }
 
 .logo-colorized {
-  color: rgb(0, 255, 0);
+  color: red;
   cursor: pointer;
   text-decoration: none;
   background-image: linear-gradient(rgb(0, 255, 213), rgb(38, 255, 0));
@@ -106,6 +104,7 @@ header ul li {
 .hero-text-container {
   width: 30%;
   margin: 30px 0;
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero-text-container h1 {
@@ -143,24 +142,6 @@ header ul li {
 .paragraph-underline:hover {
   background-size: 100% 3px;
   color: white;
-}
-
-.signup-btn {
-  padding: 10px;
-  width: 9rem;
-  background-color: #3772f6;
-  border-radius: 5px;
-  border: 1px solid white;
-  margin-top: 1rem;
-  color: white;
-  transition: all 0.5s;
-}
-
-.signup-btn:hover {
-  background-color: white;
-  border: 1px solid #3772f6;
-  color: #3772f6;
-  cursor: pointer;
 }
 
 .hero-img-container img {
@@ -247,30 +228,53 @@ header ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto;
-  padding: 3rem 0;
+  margin: 1rem auto;
+  padding: 2rem 0;
   background-color: #3882f6;
   border-radius: 1rem;
+  color: white;
 }
 
 .banner-elements-container {
   display: flex;
-  width: 80%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
 
 .banner-text {
-  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 .banner-text h4 {
   font-family: inherit;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
-.banner-text p {
-  font-size: 11px;
-  opacity: 0.8;
+.banner-text input {
+  width: 30rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 36px;
+}
+.heisenberg-btn {
+  padding: 10px;
+  width: 9rem;
+  background-color: #3772f6;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 1rem;
+  color: white;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.heisenberg-btn:hover {
+  background-color: white;
+  border: 1px solid #3772f6;
+  color: #3772f6;
+  cursor: pointer;
 }
 
 footer {
@@ -307,12 +311,25 @@ footer {
     margin: 30px 0;
   }
 }
-@media screen and (max-width: 580px) {
-  .hero-text-container {
-    margin: 30px 0;
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-text input {
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 24px;
   }
   header ul {
     display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero-text-container {
+    margin: 30px 0;
   }
 }
 
@@ -343,12 +360,6 @@ footer {
     width: 300px;
   }
 
-  .header {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
   .quote-elements {
     width: 70%;
   }
@@ -356,6 +367,12 @@ footer {
     font-style: italic;
     font-weight: 100;
     font-size: 24px;
+  }
+  .banner-text input {
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 16px;
   }
 }
 

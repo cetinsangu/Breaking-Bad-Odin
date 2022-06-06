@@ -8,16 +8,19 @@
     <title>Landing Page | Odin</title>
   </head>
   <body>
-    <audio controls hidden src="./src/heisenberg.mp3" type="audio/mpeg" id="audioEl"></audio>
+    <audio hidden src="./src/heisenberg.mp3" type="audio/mpeg" id="audioEl"></audio>
+    <audio src="./src/goddamnright.mp3" hidden id="godDamnVoice" type="audio/mpeg"></audio>
+    <audio src="./src/what.mp3" hidden id="whatVoice" type="audio/mpeg"></audio>
+    <audio src="./src/youknow.mp3" hidden id="youKnowVoice" type="audio/mpeg"></audio>
     <div class="header-bg">
       <header>
         <div class="header-logo">
           <img id="logo" src="./imgs/logo.png" alt="" />
-          <h1>Breaking <span class="logo-colorized">Good</span></h1>
+          <h1>Breaking <span class="logo-colorized">Bad</span></h1>
         </div>
         <ul>
           <li class="nav-colorized">Home</li>
-          <li class="nav-colorized">Characters</li>
+          <li class="nav-colorized" id="char">Characters</li>
           <li class="nav-colorized">Contact</li>
         </ul>
       </header>
@@ -46,7 +49,7 @@
         </section>
       </div>
 
-      <section class="random-grid-container">
+      <section class="random-grid-container" id="grid">
         <h2>Characters</h2>
         <div class="random-img-grid-container">
           <div class="random-gridel-container">
@@ -130,17 +133,14 @@
       <section class="banner-container">
         <div class="banner-elements-container">
           <div class="banner-text">
-            <h4>Call to action! It's time!</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-              eligendi!
-            </p>
+            <h4>SAY MY NAME!</h4>
+            <input type="text" name="saymyname" id="saymyname" placeholder="Heisenberg?" >
           </div>
-          <button class="signup-btn">Sign Up</button>
+          <button class="heisenberg-btn" id="goddamn">SAY!</button>
         </div>
       </section>
     </main>
-    <footer><h5>Copyright O The Odin Project 2022</h5></footer>
+    <footer><h5>Created by <a class="nav-colorized" href="https://github.com/cetinsangu/odinlandingpage" target="_blank"><b>Cetin Sangu</b></a> for the Odin Project</h5></footer>
     <script src="script.js"></script>
   </body>
 </html>
