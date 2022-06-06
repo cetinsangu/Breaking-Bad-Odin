@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,100;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-bg {
+  background-image: url('hero.jpg');
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  color: #f9faf8;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header img {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+header h1 {
+  margin: 10px;
+}
+
+.header-bg {
+  background-color: #4c2872;
+}
+
+.logo-colorized {
+  color: rgb(0, 255, 0);
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+header ul li:hover {
+  color: rgb(0, 255, 0);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding: 3rem 0;
+  color: white;
+}
+
+.hero-text-container {
+  width: 40%;
+  margin: 30px 0;
+}
+
+.hero-text-container h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.title-underline {
+  text-decoration: none;
+  background-image: linear-gradient(rgb(0, 255, 213), rgb(38, 255, 0));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  transition: background-size 500ms ease-in-out;
+  color: white;
+  cursor: text;
+}
+
+.title-underline:hover {
+  background-size: 100% 3px;
+  color: white;
+}
+.paragraph-underline {
+  text-decoration: none;
+  background-image: linear-gradient(rgb(0, 255, 213), rgb(38, 255, 0));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 1px;
+  transition: background-size 2s ease-in-out;
+  color: white;
+  cursor: text;
+  line-height: 150%;
+}
+
+.paragraph-underline:hover {
+  background-size: 100% 3px;
+  color: white;
+}
+
+.signup-btn {
+  padding: 10px;
+  width: 9rem;
+  background-color: #3772f6;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 1rem;
+  color: white;
+  transition: all 0.5s;
+}
+
+.signup-btn:hover {
+  background-color: white;
+  border: 1px solid #3772f6;
+  color: #3772f6;
+  cursor: pointer;
+}
+
+.hero-img-container img {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 10px;
+}
+
+.random-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.random-grid-container h2 {
+  margin-top: 3rem;
+}
+.random-img-grid-container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 5rem;
+  width: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 3rem 0;
+}
+
+.random-gridel-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.quote-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #e5e7eb;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-elements {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5rem auto;
+  align-items: flex-end;
+}
+
+.quote-elements p {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 36px;
+}
+.quote-elements h5 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.banner-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 3rem 0;
+  background-color: #3882f6;
+  border-radius: 1rem;
+}
+
+.banner-elements-container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-text {
+  color: white;
+}
+
+.banner-text h4 {
+  font-family: inherit;
+  font-weight: bolder;
+}
+.banner-text p {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img-container img {
+    display: none;
+  }
+}
