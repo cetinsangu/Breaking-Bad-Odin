@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
 }
 
 .hero-bg {
@@ -36,6 +35,13 @@ header img {
   width: 50px;
   height: 50px;
 }
+header img:hover {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) scale(25);
+}
+
 header h1 {
   margin: 10px;
 }
@@ -316,17 +322,46 @@ footer {
   }
   .hero-container {
     margin-top: 0px;
+    width: 70%;
+    height: 100%;
   }
   .hero-text-container {
     width: 100%;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
     margin-bottom: 10px;
   }
   .title-underline {
     font-size: 30px;
   }
+  .paragraph-underline {
+    font-size: 10px;
+  }
+
+  .random-gridel-container img {
+    height: 250px;
+    width: 300px;
+  }
+
+  .header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote-elements {
+    width: 70%;
+  }
+  .quote-elements p {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 24px;
+  }
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-width: 350px) {
+  .random-gridel-container img {
+    height: 150px;
+    width: 200px;
+  }
 }
