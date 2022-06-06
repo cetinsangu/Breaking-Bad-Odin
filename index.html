@@ -8,16 +8,17 @@
     <title>Landing Page | Odin</title>
   </head>
   <body>
+    <audio controls hidden src="./src/heisenberg.mp3" type="audio/mpeg" id="audioEl"></audio>
     <div class="header-bg">
       <header>
         <div class="header-logo">
-          <img src="./imgs/logo.png" alt="" />
+          <img id="logo" src="./imgs/logo.png" alt="" />
           <h1>Breaking <span class="logo-colorized">Good</span></h1>
         </div>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li class="nav-colorized">Home</li>
+          <li class="nav-colorized">About</li>
+          <li class="nav-colorized">Contact</li>
         </ul>
       </header>
     </div>
@@ -26,81 +27,104 @@
       <div class="hero-bg">
         <section class="hero-container">
           <div class="hero-text-container">
-            <h1><a class="title-underline">Say My Name!</a></h1>
+            <h1><a class="title-underline">Heisenberg</a></h1>
             <p>
               <a class="paragraph-underline">
-                I have spent my whole life scared, frightened of things that
-                could happen, might happen, might not happen, 50-years I spent
-                like that. Finding myself awake at three in the morning. But you
-                know what? Ever since my diagnosis, I sleep just fine. What I
-                came to realise is that fear, that’s the worst of it. That’s the
-                real enemy. So, get up, get out in the real world and you kick
-                that bastard as hard you can right in the teeth.
+                Who are you talking to right now? Who is it you think you see?
+                Do you know how much I make a year? I mean, even if I told you,
+                you wouldn't believe it. Do you know what would happen if I
+                suddenly decided to stop going into work? A business big enough
+                that it could be listed on the NASDAQ goes belly up. Disappears!
+                It ceases to exist without me. No, you clearly don't know who
+                you're talking to, so let me clue you in. I am not in danger,
+                Skyler. I am the danger. A guy opens his door and gets shot and
+                you think that of me? No. I am the one who knocks!
               </a>
             </p>
-            <button class="signup-btn">Sign Up</button>
+            <!-- <button class="signup-btn">Sign Up</button> -->
           </div>
         </section>
       </div>
 
       <section class="random-grid-container">
-        <h2>Some random information</h2>
+        <h2>Characters</h2>
         <div class="random-img-grid-container">
           <div class="random-gridel-container">
             <img
-              src="https://listelist.com/wp-content/uploads/2015/11/breakingBad-listelist-620x375.jpg"
+              src="./imgs/jesse.jpeg"
               alt="random-img"
             />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quam?
-              Modi ducimus fugiat quos porro consequuntur, iste quas dolore
-              voluptate.
+              What’s the point of being an outlaw when you got responsibilities?
+              <br><br>
+              <span>Jesse Pinkman</span>
+            </p>
+            
+          </div>
+          <div class="random-gridel-container">
+            <img src="./imgs/gustavo.jpeg" alt="random-img" />
+            <p>
+              When you have children, you always have family. They will always be your priority, your responsibility. And a man, a man provides. And he does it even when he’s not appreciated or respected or even loved. He simply bears up and he does it. Because he’s a man. <br><br>
+              <span>Gustavo Fring</span>
+            </p>
+            
+          </div>
+          <div class="random-gridel-container">
+            <img
+              src="./imgs/saul.jpeg"
+              alt="random-img"
+            />
+            <p>
+              Clearly his taste in women is the same as his taste in lawyers: only the very best... with just a right amount of dirty...<br><br>
+              <span>Saul Goodman</span>
             </p>
           </div>
           <div class="random-gridel-container">
             <img
-              src="https://listelist.com/wp-content/uploads/2015/11/breakingBad-listelist-620x375.jpg"
+              src="./imgs/mike.jpeg"
               alt="random-img"
             />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quam?
-              Modi ducimus fugiat quos porro consequuntur, iste quas dolore
-              voluptate.
+              I assure you that I can kill you from way over here, if it makes you feel any better.<br><br>
+              <span>Mike Ehrmantraut</span>
             </p>
           </div>
           <div class="random-gridel-container">
             <img
-              src="https://listelist.com/wp-content/uploads/2015/11/breakingBad-listelist-620x375.jpg"
+              src="./imgs/hank.jpeg"
               alt="random-img"
             />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quam?
-              Modi ducimus fugiat quos porro consequuntur, iste quas dolore
-              voluptate.
+              If you’re gonna bring a gun, you gotta bring enough gun.<br><br>
+              <span>Hank Schrader</span>
             </p>
           </div>
           <div class="random-gridel-container">
             <img
-              src="https://listelist.com/wp-content/uploads/2015/11/breakingBad-listelist-620x375.jpg"
+              src="./imgs/tuco.jpeg"
               alt="random-img"
             />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quam?
-              Modi ducimus fugiat quos porro consequuntur, iste quas dolore
-              voluptate.
+              Talk is talk. But owing me money that’s bad.<br><br>
+              <span>Tuco Salamanca</span>
             </p>
+          </div>
+          
           </div>
         </div>
       </section>
       <section class="quote-container">
         <div class="quote-elements">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            cum iste id, necessitatibus nesciunt odio minima quibusdam expedita
-            dolores debitis dolorem officia quasi omnis hic et officiis. Unde,
-            dolore iste!
+            I have spent my whole life scared. Frightened of things that could
+            happen; might happen; might not happen. 50 years I've spent like
+            that. Finding myself awake at 3am. But you know what? Ever since my
+            diagnosis, I sleep just fine. I came to realize it's that fear is
+            the worst of it, that's the real enemy. So, get up, get out in the
+            real world and you kick that bastard as hard as you can, right in
+            the teeth.
           </p>
-          <h5>-Thor, God of Thunder</h5>
+          <h5>-Walter White, Breaking Bad</h5>
         </div>
       </section>
       <section class="banner-container">
