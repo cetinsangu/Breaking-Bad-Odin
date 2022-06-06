@@ -86,7 +86,7 @@ header ul {
 
 header ul li {
   list-style-type: none;
-  margin: 0 10px;
+  margin: 0 2rem;
   cursor: pointer;
   transition: color 0.5s;
 }
