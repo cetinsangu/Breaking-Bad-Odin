@@ -10,7 +10,7 @@ body {
 }
 
 .hero-bg {
-  background-image: url('hero.jpg');
+  background-image: url('./imgs/hero.jpg');
   background-size: cover;
 }
 
